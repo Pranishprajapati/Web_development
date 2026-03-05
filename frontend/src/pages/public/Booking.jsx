@@ -112,6 +112,11 @@ const Booking = () => {
   };
 
   const handleSubmit = async (e) => {
+    const user = JSON.parse(localStorage.getItem("user"));
+if (!user) {
+  setToast({ message: "User not logged in", type: "error" });
+  return;
+}
     e.preventDefault();
 
     if (!form.date || selectedHours.length === 0) {
@@ -122,8 +127,8 @@ const Booking = () => {
       return;
     }
 
-    const fromTime = `${Math.min(...selectedHours)}:00`;
-    const toTime = `${Math.max(...selectedHours) + 1}:00`;
+   const fromTime = Math.min(...selectedHours);
+    const toTime = Math.max(...selectedHours) + 1;
 
     setLoading(true);
 
