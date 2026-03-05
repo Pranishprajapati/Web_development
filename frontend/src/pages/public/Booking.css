@@ -1,0 +1,231 @@
+
+.booking-page {
+  font-family: 'Poppins', sans-serif;
+  background: #f7f8fc;
+  min-height: 100vh;
+  padding-bottom: 50px;
+}
+
+.toast {
+  top: 20px;
+}
+
+/* hero*/
+.booking-hero {
+  text-align: center;
+  padding: 80px 20px 60px 20px;
+  border-bottom: 2px solid #e63946;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  background: linear-gradient(135deg, #0d1b2a, #1b263b);
+  color: #fff;
+}
+
+.booking-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.booking-hero p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+/* Form Section */
+.booking-form-section {
+  display: flex;
+  justify-content: center;
+  margin-top: -40px;
+}
+
+.form-card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  padding: 40px;
+  width: 90%;
+  max-width: 600px;
+  text-align: left;
+}
+
+.form-card h2 {
+  margin-bottom: 20px;
+  color: #111827;
+}
+
+/* Form Inputs */
+.booking-form input,
+.booking-form select {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  font-size: 1rem;
+  transition: border 0.3s, box-shadow 0.3s;
+  background: #fff;
+}
+
+.booking-form input:focus,
+.booking-form select:focus {
+  border-color: #e63946;
+  box-shadow: 0 0 5px rgba(230, 57, 70, 0.5);
+  outline: none;
+}
+
+/* Optional: Custom arrow for select */
+.booking-form select {
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg width='14' height='8' viewBox='0 0 14 8' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1l6 6 6-6' stroke='%23333' stroke-width='2' fill='none' fill-rule='evenodd'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 14px 8px;
+  cursor: pointer;
+}
+.booking-form input:-webkit-autofill,
+.booking-form input:-webkit-autofill:hover,
+.booking-form input:-webkit-autofill:focus,
+.booking-form input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0px 1000px #fff inset; 
+  -webkit-text-fill-color: #111827; 
+}
+
+/* Time Range */
+.time-range {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.time-range label {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+}
+
+/* Time Buttons (Optional) */
+.time-buttons {
+  margin-bottom: 20px;
+}
+
+.time-buttons p {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.hour-btn {
+  padding: 8px 12px;
+  border: 1px solid #e63946;
+  border-radius: 8px;
+  background: #fff;
+  color: #e63946;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.hour-btn:hover {
+  background: #e63946;
+  color: #fff;
+}
+
+.hour-btn.selected {
+  background: #e63946;
+  color: #fff;
+}
+
+/* Total Price */
+.total-price {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #e63946;
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+button[type="submit"], .btn-secondary {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button[type="submit"] {
+  background: #e63946;
+  color: #fff;
+}
+
+button[type="submit"]:hover {
+  background: #d62828;
+}
+
+.btn-secondary {
+  background: #e5e7eb;
+  color: #111827;
+}
+
+.btn-secondary:hover {
+  background: #d1d5db;
+}
+
+/* Hour Buttons */
+.hour-btn {
+  padding: 8px 12px;
+  border: 1px solid #e63946;
+  border-radius: 8px;
+  background: #fff;
+  color: #e63946;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.hour-btn:hover {
+  background: #e63946;
+  color: #fff;
+}
+
+.hour-btn.selected {
+  background: #e63946;
+  color: #fff;
+}
+
+.hour-btn.disabled {
+  background: #d1d5db; 
+  color: #9ca3af;      
+  border: 1px solid #d1d5db;
+  cursor: not-allowed;
+}
+
+.hour-btn.disabled:hover {
+  background: #d1d5db;
+  color: #9ca3af;
+}
+
+
+/*Responsive*/
+@media (max-width: 768px) {
+  .time-range {
+    flex-direction: column;
+  }
+
+  .booking-hero h1 {
+    font-size: 2rem;
+  }
+
+  .booking-hero p {
+    font-size: 1rem;
+  }
+}

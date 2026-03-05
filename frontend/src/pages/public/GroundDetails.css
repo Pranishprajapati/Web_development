@@ -1,0 +1,125 @@
+.ground-hero {
+  height: 35vh;
+  width: 100vh;
+  background-size: cover;
+  background-position:center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-top: 30px;
+  margin-bottom: 80px;
+  margin-left: 300px;
+}
+
+.ground-hero-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.hero-rating {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.star-icon {
+  color: gold;
+}
+
+.ground-overview {
+  display: flex;
+  justify-content: space-between;
+  background: #f8f8f8;
+  padding: 2rem;
+  margin: -3rem auto 2rem;
+  border-radius: 12px;
+  max-width: 1000px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.overview-left h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.btn-book {
+  background-color: maroon;
+  padding: 0.8rem 1.5rem;
+  font-weight: bold;
+  border-radius: 6px;
+  color: white;
+  text-decoration: none;
+}
+
+.overview-right h3 {
+  margin-bottom: 1rem;
+}
+
+.facilities-list {
+  list-style: none;
+  padding: 0;
+}
+
+.facilities-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.ground-description {
+  max-width: 800px;
+  margin: 2rem auto;
+  line-height: 1.6;
+}
+
+.ground-extra {
+  max-width: 1000px;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.extra-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.extra-card {
+  flex: 1 1 200px;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+}
+
+.extra-icon {
+  color: maroon;
+  font-size: 1.5rem;
+}
+
+.back-button {
+  text-align: center;
+}
+
+.btn-secondary {
+  text-decoration: none;
+  padding: 0.8rem 1.5rem;
+  background: #555;
+  color: white;
+  border-radius: 6px;
+  margin-bottom: 100px;
+}
